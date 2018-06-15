@@ -1,0 +1,3 @@
+Get-ADUser -Identity FromUserAcct -Properties memberof |
+Select-Object -ExpandProperty memberof |
+Add-ADGroupMember -Members ToUserAcct
